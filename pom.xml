@@ -26,7 +26,7 @@
 
   <groupId>org.apache.qpid</groupId>
   <artifactId>proton-j-parent</artifactId>
-  <version>0.30.0</version>
+  <version>0.30.0_FDFix</version>
   <packaging>pom</packaging>
 
   <name>Proton-J Parent</name>
@@ -47,6 +47,14 @@
     <!-- surefire forked jvm arguments -->
     <argLine>-Xmx2g -enableassertions ${jacoco-config}</argLine>
   </properties>
+
+  <distributionManagement>
+  <repository>
+    <id>github</id>
+    <name>GitHub OWNER Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/OpenNMS/qpid-proton-j</url>
+  </repository>
+</distributionManagement>
 
   <dependencyManagement>
     <dependencies>

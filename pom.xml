@@ -49,12 +49,15 @@
   </properties>
 
   <distributionManagement>
-  <repository>
-    <id>github</id>
-    <name>GitHub OWNER Apache Maven Packages</name>
-    <url>https://maven.pkg.github.com/OpenNMS/qpid-proton-j</url>
-  </repository>
-</distributionManagement>
+    <snapshotRepository>
+      <id>cloudsmith</id>
+      <url>https://maven.cloudsmith.io/opennms/maven-3rdparty/</url>
+    </snapshotRepository>
+    <repository>
+      <id>cloudsmith</id>
+      <url>https://maven.cloudsmith.io/opennms/maven-3rdparty/</url>
+    </repository>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
